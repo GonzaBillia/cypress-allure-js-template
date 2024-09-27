@@ -33,8 +33,6 @@ git clone https://github.com/usuario/cypress-allure-js-template.git
 ### 2.Instala las dependencias:
 
 ```bash
-```
-```bash
 npm install
 ```
 ### 3.Ejecuta las pruebas o genera el reporte con uno de los scripts (ver sección de Uso).
