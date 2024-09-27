@@ -91,9 +91,9 @@ cypress-allure-js-template/
 │   ├── global/
 │   ├── plugins/
 │   ├── support/
-│   └── utils/
-├── screenshots/
-├── videos/
+│   ├── utils/
+|   ├── screenshots/
+|   └── videos/
 ├── scripts/
 │   ├── allure:run-report.js
 │   └── allure:run-local.js
