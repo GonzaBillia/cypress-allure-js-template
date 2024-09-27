@@ -1,0 +1,14 @@
+
+.DS_Store
+cypress/.DS_Store
+cypress/screenshots/
+cypress/videos/
+cypress/results/
+node_modules/
+allure-results
+allure-report
+
+.dist
+cypress.env.json
+.env
+.vscode

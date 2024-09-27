@@ -1,0 +1,38 @@
+{
+  "name": "cypress-allure-js-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "keywords": [
+    "cypress",
+    "cypress template",
+    "cypress allure template",
+    "allure",
+    "allure template"
+  ],
+  "author": "Gonzalo Billia",
+  "license": "ISC",
+  "description": "Template Repository with basic configuration for Cypress and Allure",
+  "scripts": {
+    "cypress:runner": "npx cypress run",
+    "cypress:run-chrome": "npx cypress run --browser chrome",
+    "allure:run-report": "node scripts/test-and-generate-report.js",
+    "allure:run-local": "node scripts/test-and-serve-report.js",
+    "allure:generate": "mv -f allure-report/history allure-results/history && rm -r allure-report || true &&allure generate allure-results",
+    "lint": "eslint cypress/e2e/**/*.js",
+    "format": "prettier --write 'cypress/e2e/**/*.js'"
+  },
+  "devDependencies": {
+    "allure-commandline": "^2.30.0",
+    "allure-cypress": "^3.0.2",
+    "cypress": "^13.15.0",
+    "cypress-plugin-api": "^2.11.2",
+    "eslint": "^9.11.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-chai-friendly": "^1.0.1",
+    "eslint-plugin-cypress": "^3.5.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "fs-extra": "^11.2.0",
+    "prettier": "^3.3.3"
+  }
+}
