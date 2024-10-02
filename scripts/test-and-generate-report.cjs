@@ -49,5 +49,24 @@ runTests.on('exit', (code) => {
 
     } else {
         console.error('Las pruebas de Cypress fallaron.');
+
+        // Generar el reporte de Allure y mostrar salida en tiempo real
+        const generateReport = exec('allure generate allure-results --clean -o allure-report && allure open');
+
+        generateReport.stdout.on('data', (data) => {
+            console.log(data.toString());
+        });
+
+        generateReport.stderr.on('data', (data) => {
+            console.error(data.toString());
+        });
+
+        generateReport.on('exit', (code) => {
+            if (code === 0) {
+                console.log('Reporte de Allure generado exitosamente.');
+            } else {
+                console.error('Error al generar el reporte de Allure.');
+            }
+        });
     }
 });
