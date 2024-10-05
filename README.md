@@ -15,6 +15,7 @@ Este repositorio es una plantilla que integra Cypress con Allure para la generac
 - **ESLint**: Linter para mantener un código JavaScript limpio.
 - **Prettier**: Formateador de código.
 - **Node.js Scripts**: Scripts personalizados para la ejecución de pruebas y generación de reportes con Allure.
+- **Cypress-grep**: Herramienta de gestion de Tags.
 
 ## Requisitos
 

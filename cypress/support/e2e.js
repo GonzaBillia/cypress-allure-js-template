@@ -14,9 +14,11 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
+import registerCypressGrep from '@cypress/grep/src/support'
 import 'cypress-plugin-api'
 import 'allure-cypress'
 import './commands'
 
+registerCypressGrep()
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
