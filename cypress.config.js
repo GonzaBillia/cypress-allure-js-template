@@ -2,7 +2,7 @@ import { defineConfig } from "cypress";
 import { allureCypress } from "allure-cypress/reporter";
 import * as os from "node:os";
 
-module.exports = defineConfig({
+export default defineConfig({
   e2e: {
     setupNodeEvents(on, config) {
       allureCypress(on, config, {

@@ -16,8 +16,8 @@
   "scripts": {
     "cypress:runner": "npx cypress run",
     "cypress:run-chrome": "npx cypress run --browser chrome",
-    "allure:run-report": "node scripts/test-and-generate-report.js",
-    "allure:run-local": "node scripts/test-and-serve-report.js",
+    "allure:run-report": "node scripts/test-and-generate-report.cjs",
+    "allure:run-local": "node scripts/test-and-serve-report.cjs",
     "allure:generate": "mv -f allure-report/history allure-results/history && rm -r allure-report || true &&allure generate allure-results",
     "lint": "eslint cypress/e2e/**/*.js",
     "format": "prettier --write 'cypress/e2e/**/*.js'"
